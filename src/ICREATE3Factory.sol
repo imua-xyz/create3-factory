@@ -1,6 +1,12 @@
 // SPDX-License-Identifier: AGPL-3.0
 pragma solidity >=0.6.0;
 
+/// @dev The CREATE3 factory's address, deployed using CREATE2.
+address constant CREATE3_FACTORY_ADDRESS = 0x9fBB3DF7C40Da2e5A0dE984fFE2CCB7C47cd0ABf;
+
+/// @dev The CREATE3 factory's instance.
+ICREATE3Factory constant CREATE3_FACTORY = ICREATE3Factory(CREATE3_FACTORY_ADDRESS);
+
 /// @title Factory for deploying contracts to deterministic addresses via CREATE3
 /// @author zefram.eth
 /// @notice Enables deploying contracts using CREATE3. Each deployer (msg.sender) has
