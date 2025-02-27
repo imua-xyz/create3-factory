@@ -2,7 +2,7 @@
 pragma solidity >=0.6.0;
 
 /// @dev The CREATE3 factory's address, deployed using CREATE2.
-address constant CREATE3_FACTORY_ADDRESS = 0x9fBB3DF7C40Da2e5A0dE984fFE2CCB7C47cd0ABf;
+address constant CREATE3_FACTORY_ADDRESS = 0x6aA3D87e99286946161dCA02B97C5806fC5eD46F;
 
 /// @dev The CREATE3 factory's instance.
 ICREATE3Factory constant CREATE3_FACTORY = ICREATE3Factory(CREATE3_FACTORY_ADDRESS);
